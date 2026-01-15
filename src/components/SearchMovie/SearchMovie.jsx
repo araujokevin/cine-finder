@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Container from '../Container/Container';
 import styles from './SearchMovie.module.css';
-import { useMovieContext } from '../../contexts/MovieContext';
+import { useMovieContext } from '../../contexts/useMovieContext';
 import tmdbApi from '../../services/tmdbApi';
 
 function SearchMovie() {
@@ -32,7 +32,7 @@ function SearchMovie() {
         const data = await tmdbApi.searchMovies(
           query,
           state.currentPage,
-          signal
+          signal,
         );
 
         dispatch({
@@ -68,11 +68,11 @@ function SearchMovie() {
       <div className={styles.searchMovie}>
         <div className={styles.form}>
           <input
-            type="text"
-            placeholder="Buscar filmes pelo título (ex.: The matrix)"
+            type='text'
+            placeholder='Buscar filmes pelo título (ex.: The matrix)'
             className={styles.inputSearch}
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={e => setQuery(e.target.value)}
           />
         </div>
 

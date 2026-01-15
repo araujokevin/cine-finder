@@ -1,6 +1,6 @@
 import { HeartIcon } from 'lucide-react';
 import { toast } from 'react-toastify';
-import { useMovieContext } from '../../contexts/MovieContext';
+import { useMovieContext } from '../../contexts/useMovieContext';
 
 import styles from './styles.module.css';
 

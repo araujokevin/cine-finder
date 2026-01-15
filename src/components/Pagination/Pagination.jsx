@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Container from '../Container/Container';
 
 import styles from './Pagination.module.css';
-import { useMovieContext } from '../../contexts/MovieContext';
+import { useMovieContext } from '../../contexts/useMovieContext';
 import { ButtonDefault } from '../ButtonDefault/ButtonDefault';
 
 function Pagination() {

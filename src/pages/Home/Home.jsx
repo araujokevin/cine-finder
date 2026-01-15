@@ -6,7 +6,7 @@ import Pagination from '../../components/Pagination/Pagination';
 import Loader from '../../components/Loader/Loader';
 import { useEffect } from 'react';
 import tmdbApi from '../../services/tmdbApi';
-import { useMovieContext } from '../../contexts/MovieContext';
+import { useMovieContext } from '../../contexts/useMovieContext';
 import FeedbackMessage from '../../components/FeedbackMessage/FeedbackMessage';
 import { SearchXIcon } from 'lucide-react';
 

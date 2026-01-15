@@ -4,7 +4,7 @@ import FeedbackMessage from '../../components/FeedbackMessage/FeedbackMessage';
 
 import MovieCard from '../../components/MovieCard/MovieCard';
 import MainTemplate from '../../components/templates/MainTemplate/MainTemplate';
-import { useMovieContext } from '../../contexts/MovieContext';
+import { useMovieContext } from '../../contexts/useMovieContext';
 
 import styles from './Favorites.module.css';
 

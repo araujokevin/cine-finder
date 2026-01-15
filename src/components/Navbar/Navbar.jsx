@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import { ButtonDefault } from '../ButtonDefault/ButtonDefault';
-import { useMovieContext } from '../../contexts/MovieContext';
+import { useMovieContext } from '../../contexts/useMovieContext';
 
 function Navbar() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');

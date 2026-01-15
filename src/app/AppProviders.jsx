@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { MovieProvider } from '../contexts/MovieContext';
+import { MovieProvider } from '../contexts/MovieProvider';
 
 export function AppProviders({ children }) {
   return (
