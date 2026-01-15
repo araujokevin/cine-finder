@@ -1,0 +1,71 @@
+.wrapper {
+  margin-top: 4.8rem;
+  padding: 2.4rem 0;
+  background-color: var(--bg);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme='dark'] .wrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text);
+}
+
+/* Logo com ícone */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+
+  color: var(--text);
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.logo svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--primary);
+}
+
+.logo:hover {
+  color: var(--primary);
+}
+
+.copy {
+  font-size: 1.3rem;
+  color: var(--text-muted);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .logo svg {
+    width: 2.2rem;
+    height: 2.2rem;
+    color: var(--primary);
+  }
+
+  .copy {
+    font-size: 1.2rem;
+  }
+}

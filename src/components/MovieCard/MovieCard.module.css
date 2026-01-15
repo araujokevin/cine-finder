@@ -1,0 +1,67 @@
+.movie {
+  position: relative;
+  width: 26rem;
+  background-color: var(--bg-300);
+  color: var(--text-300);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
+  transition: transform 0.3s ease-in;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.movie:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.movie img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.movieRating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  background-color: var(--bg-300);
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.movieRating svg {
+  color: #d1df13ff;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 0.4rem;
+}
+
+.btnFavorite {
+  position: relative;
+}
+
+.movieInfo h3 {
+  font-size: 1.6rem;
+}
+
+.movieInfo p {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,95 @@
+.movieDetails {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 1.6rem;
+  color: var(--text-300);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.detailsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.term {
+  font-weight: bold;
+}
+
+.poster img {
+  width: 32rem;
+  border-radius: 0.4rem;
+}
+
+/* === Fundo com backdrop === */
+.backdropContainer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* cobre toda a tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Camada escura translúcida */
+.backdropOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* opacidade ajustável */
+  z-index: 0;
+}
+
+/* Garante que o conteúdo fique acima do overlay */
+.movieDetails {
+  position: relative;
+  z-index: 1;
+}
+
+.btnFavorite {
+  position: static;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Botão voltar */
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.6rem 1.2rem;
+  font-size: 1.4rem;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-300);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .movieDetails {
+    display: flex;
+    flex-direction: column;
+  }
+}

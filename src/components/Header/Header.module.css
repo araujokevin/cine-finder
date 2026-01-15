@@ -1,0 +1,70 @@
+/* Wrapper fixo com efeito glass */
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  background-color: rgba(226, 226, 241, 0.8);
+  backdrop-filter: blur(8px);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode */
+:root[data-theme='dark'] .wrapper {
+  background-color: rgba(38, 35, 80, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 6.4rem;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  text-decoration: none;
+  color: var(--text);
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  transition: color 0.2s ease;
+}
+
+.logo svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: var(--primary);
+}
+
+.logo:hover {
+  color: var(--primary);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .logo svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

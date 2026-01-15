@@ -1,0 +1,17 @@
+import { Routes, Route } from 'react-router-dom';
+
+import Home from '../pages/Home/Home';
+import Favorites from '../pages/Favorites/Favorites';
+import MovieDetails from '../pages/MovieDetails/MovieDetails';
+import PageNotFound from '../pages/PageNotFound/PageNotFound';
+
+export function AppRoutes() {
+  return (
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/favorites' element={<Favorites />} />
+      <Route path='/details/:id' element={<MovieDetails />} />
+      <Route path='*' element={<PageNotFound />} />
+    </Routes>
+  );
+}
