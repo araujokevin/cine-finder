@@ -6,7 +6,7 @@ import { ButtonDefault } from '../ButtonDefault/ButtonDefault';
 import { useMovieContext } from '../../contexts/useMovieContext';
 
 function Navbar() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
   const { state } = useMovieContext();
 
   const favoritesCount = state.favoriteMovies.length;
